@@ -1,0 +1,9 @@
+#!/usr/bin/env perl
+
+my $version = shift @ARGV;
+while (<>) {
+    s/^(package\s+[a-z0-9:]+)(\s+v[^\s;]\s*)?;/$1 v$version;/i;
+    print "=head1 VERSION\n\n$version\n\n"
+        if m/^=head1 SYNOPSIS/;
+    print;
+}

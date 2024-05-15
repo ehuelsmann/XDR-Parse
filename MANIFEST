@@ -1,0 +1,8 @@
+bin/xdr-parse
+cpanfile
+lib/XDR/Parse.pm
+Makefile.PL
+MANIFEST			This list of files
+test.x
+xdr.yp
+yapp.PL
