@@ -39,3 +39,4 @@ inc/
 /devel/
 *~
 xdr.output
+/lib/XDR/Parse.pm
