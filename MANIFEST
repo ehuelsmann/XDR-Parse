@@ -1,7 +1,12 @@
 bin/xdr-parse
+CHANGES
 cpanfile
 lib/XDR/Parse.pm
+LICENSE
 Makefile.PL
-MANIFEST                        This list of files
+MANIFEST			This list of files
+pmfilter
+t/01-parse.t
+t/data/01-parse.x
 xdr.yp
 yapp.PL

@@ -10,4 +10,4 @@
 ^.git
 ^xdr.output$
 ^pm_to_blib$
-^pmfilter$
+/.exists
