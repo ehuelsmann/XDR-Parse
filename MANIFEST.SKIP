@@ -11,3 +11,4 @@
 ^xdr.output$
 ^pm_to_blib$
 /.exists
+^pmfilter$

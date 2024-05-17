@@ -18,7 +18,6 @@ WriteMakefile(
         },
     },
     NAME              => 'XDR::Parse',
-    PM_FILTER         => "./pmfilter $VERSION",
     VERSION           => $VERSION,
     depend            => { pm_to_blib => 'pm' },
 );
@@ -31,7 +30,9 @@ pm: lib/XDR/Parse.pm
 	$(NOECHO) $(NOOP)
 
 lib/XDR/Parse.pm: xdr.yp
-	$(PERLRUN) yapp.PL lib/XDR/Parse.pm xdr.yp
+	yapp -o Parse.out -m XDR::Parse xdr.yp
+	./pmfilter $(VERSION) < Parse.out > $@
+	@rm Parse.out
 
 MAKE_FRAG
 }
