@@ -18,11 +18,20 @@ WriteMakefile(
         },
     },
     NAME              => 'XDR::Parse',
-    PL_FILES          => {
-        'yapp.PL' => {
-            'lib/XDR/Parse.pm' => [ 'xdr.yp' ],
-        }
-    },
     PM_FILTER         => "./pmfilter $VERSION",
     VERSION           => $VERSION,
+    depend            => { pm_to_blib => 'pm' },
 );
+
+package MY;
+
+sub postamble {
+    return <<'MAKE_FRAG';
+pm: lib/XDR/Parse.pm
+	$(NOECHO) $(NOOP)
+
+lib/XDR/Parse.pm: xdr.yp
+	$(PERLRUN) yapp.PL lib/XDR/Parse.pm xdr.yp
+
+MAKE_FRAG
+}
