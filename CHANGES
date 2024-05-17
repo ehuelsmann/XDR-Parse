@@ -1,9 +1,10 @@
 -----
 
-0.x.y   To be released
-    [Breaking]
+0.1.1   2024-05-17
     [Fixed]
-    [Added]
+        * Add missing 'pmfilter' script
+        * Prevent re-generation of Parse.pm on installation from dist
+        * Add CHANGES file
 
 0.1.0   2024-05-17
     Initial release
