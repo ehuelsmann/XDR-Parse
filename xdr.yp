@@ -509,7 +509,7 @@ is detailed in the sections below.
 
 =head4 'typedef' declarations
 
-This node is a ´declaration' node as documented in the section
+This node is a 'declaration' node as documented in the section
 'declaration' nodes below.
 
 =head4 'enum' declarations

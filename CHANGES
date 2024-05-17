@@ -1,5 +1,9 @@
 -----
 
+0.x.y   To be released
+    [Fixed]
+        * POD encoding error regarding non-ascii character
+
 0.1.1   2024-05-17
     [Fixed]
         * Add missing 'pmfilter' script
