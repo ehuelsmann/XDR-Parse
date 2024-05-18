@@ -266,7 +266,7 @@ declaration:
                comments => delete $_[1]->{comments},
                location => $_[1]->{location} } }
    | 'void'                            {
-            +{ type => $_[1],
+            +{ type => { spec => 'primitive', name => $_[1] },
                comments => delete $_[1]->{comments},
                location => $_[1]->{location} } }
 ;
