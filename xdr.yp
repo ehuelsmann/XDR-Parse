@@ -121,7 +121,7 @@ caseClause:
 defaultClause:
     'default' ':' declaration ';'    {
             # What to do with comments on the ':'?
-            +{ declaration => $_[4],
+            +{ declaration => $_[3],
                comments => $_[1]->{comments},
                location => $_[1]->{location},
                trailing_comments => $_[4]->{comments} } }
