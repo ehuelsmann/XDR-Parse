@@ -80,7 +80,7 @@ constantDef:
 
 switch:
     'switch' '(' declaration ')' '{' caseBody '}' {
-                  +{ descriminator => {
+                  +{ discriminator => {
                         declaration => $_[3],
                         comments => $_[2]->{comments},
                         trailing_comments => $_[4]->{comments}
@@ -523,12 +523,12 @@ fields of the struct type. For more details on the C<type> node, see below.
 =head4 'union' declarations
 
 This node has a single key
-C<switch>: itself a node which contains a C<handlers> and a C<descriminator>
-key.  The descriminator node has a C<name> and a C<type> key; the C<handlers>
+C<switch>: itself a node which contains a C<handlers> and a C<discriminator>
+key.  The discriminator node has a C<name> and a C<type> key; the C<handlers>
 node contains one or two keys: C<cases> and optionally C<default>.  C<cases>
 is an array of nodes defining the fields of the union; each element consists
 of three keys: C<value>, C<name> and <declaration>. C<value> is the value
-associated with the descriminator, to indicate the current definition.
+associated with the discriminator, to indicate the current definition.
 C<name> is the name of the field. C<declaration> contains the type declaration
 for the field.
 
