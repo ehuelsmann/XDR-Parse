@@ -1,5 +1,7 @@
 -----
 
+0.x.y   To be released
+
 0.1.2   2024-05-18
     [Fixed]
         * POD encoding error regarding non-ascii character
