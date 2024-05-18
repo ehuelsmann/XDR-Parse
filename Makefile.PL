@@ -29,7 +29,7 @@ sub postamble {
 pm: lib/XDR/Parse.pm
 	$(NOECHO) $(NOOP)
 
-lib/XDR/Parse.pm: xdr.yp
+lib/XDR/Parse.pm: xdr.yp Makefile
 	yapp -o Parse.out -m XDR::Parse xdr.yp
 	./pmfilter $(VERSION) < Parse.out > $@
 	@rm Parse.out
