@@ -401,10 +401,6 @@ XDR::Parse - Creation of an AST of an XDR specification
   my $p = XDR::Parse->new;
   print Dumper( $p->parse( \*STDIN ) );
 
-=head1 VERSION
-
-0.0.1
-
 =head1 DESCRIPTION
 
 This module contains a parser for the XDR (eXternal Data Representation)
