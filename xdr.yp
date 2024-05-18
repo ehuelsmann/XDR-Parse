@@ -261,7 +261,7 @@ declaration:
                location => $_[1]->{location} } }
    | typeSpecifier '*' IDENT           {
             +{ name => $_[3],
-               type => { spec => 'named', name => $_[1] },
+               type => $_[1],
                pointer => 1,
                comments => delete $_[1]->{comments},
                location => $_[1]->{location} } }
