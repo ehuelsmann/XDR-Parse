@@ -1,6 +1,6 @@
 -----
 
-0.x.y   To be released
+0.3.0   2024-05-20
     [Breaking]
         * 'struct' members 'type' description moved into 'declaration' key
         * 'union' default member's name moved one level up from 'declaration'
